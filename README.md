@@ -2,12 +2,15 @@
 This project implements the ubiquitous [TodoMVC](http://todomvc.com/) application in React. It uses [MobX](http://mobx.js.org) for the internal state store, and leverages [Convergence](https://convergence.io) to provide the storage backend and to facilitate realtime management of todos.  For good measure, this version of the application also supports dragging and dropping the todos to reorder them.
  
 
-## Project Structure
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Configuration and Launching
 
+1. Ensure you have access to a running Convergence server.  If you don't, the easiest thing to do is grab the Convergence Development Edition docker container.
+2. Update the `CONVERGENCE_URL` in the `public/config.js` file to point to you Convergence server.
+3. Run `npm start` as described below.
 
 
 ## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
