@@ -1,0 +1,61 @@
+{
+  "name": "@convergence/todo-mvc-demo",
+  "version": "0.1.0",
+  "description": "The famous TodoMVC app written using React, MobX, and Convergence",
+  "keywords": ["realtime", "collaboration", "todomvc", "convergence", "react", "mobx"],
+  "homepage": "http://convergencelabs.com",
+  "author": {
+    "name": "Convergence Labs",
+    "email": "info@convergencelabs.com",
+    "url": "http://convergencelabs.com"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/convergencelabs/todomvc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/convergencelabs/todomvc/issues"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@convergence/convergence": "1.0.0-beta.8",
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.3",
+    "@types/pluralize": "0.0.29",
+    "@types/randomstring": "^1.1.6",
+    "@types/react": "16.8.8",
+    "@types/react-beautiful-dnd": "^10.1.0",
+    "@types/react-dom": "16.8.2",
+    "classnames": "^2.2.6",
+    "director": "^1.2.8",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "pluralize": "^7.0.0",
+    "randomstring": "^1.1.5",
+    "react": "^16.8.4",
+    "react-beautiful-dnd": "^10.1.0",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8",
+    "todomvc-app-css": "^2.0.0",
+    "todomvc-common": "^1.0.1",
+    "typescript": "3.3.3333"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
