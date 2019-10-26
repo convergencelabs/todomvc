@@ -8,6 +8,7 @@ export interface ITodoFooterProps {
   onClearCompleted: () => void;
   filter: string | undefined;
   count: number;
+  id: string;
 }
 
 export class TodoFooter extends Component<ITodoFooterProps, {}> {
@@ -28,9 +29,9 @@ export class TodoFooter extends Component<ITodoFooterProps, {}> {
           <strong>{this.props.count}</strong> {pluralize('item', this.props.count)} left
         </span>
         <ul className="filters">
-          <li><a href="#/" className={classNames({selected: filter === ALL_TODOS})}>All</a></li>
-          <li><a href="#/active" className={classNames({selected: filter === ACTIVE_TODOS})}>Active</a></li>
-          <li><a href="#/completed" className={classNames({selected: filter === COMPLETED_TODOS})}>Completed</a></li>
+          <li><a href={`#/${this.props.id}`} className={classNames({selected: filter === ALL_TODOS})}>All</a></li>
+          <li><a href={`#/${this.props.id}/active`} className={classNames({selected: filter === ACTIVE_TODOS})}>Active</a></li>
+          <li><a href={`#/${this.props.id}/completed`} className={classNames({selected: filter === COMPLETED_TODOS})}>Completed</a></li>
         </ul>
         {clearButton}
       </footer>

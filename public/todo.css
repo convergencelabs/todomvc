@@ -1,0 +1,17 @@
+#todoapp .share {
+  text-align: right;
+}
+
+#todoapp .share a, #todoapp .share span  {
+  color: #039be5;
+}
+
+#todoapp .share a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#todoapp .share span {
+  font-size: 1rem;
+  margin-right: 5px;
+}

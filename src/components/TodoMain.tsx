@@ -7,6 +7,7 @@ import {Todo} from "../models/Todo";
 import {observer} from "mobx-react";
 
 interface ITodoMainProps {
+  id: string;
   todoStore: TodoStore;
   filter?: string;
 }
@@ -16,7 +17,6 @@ interface ITodoMainState {
 }
 
 class TodoMainComponent extends Component<ITodoMainProps, ITodoMainState> {
-
   state = {
     activeTodoId: null
   };
@@ -58,7 +58,6 @@ class TodoMainComponent extends Component<ITodoMainProps, ITodoMainState> {
         </Draggable>
       );
     });
-
 
     if (this.props.todoStore.todos.length) {
       return (

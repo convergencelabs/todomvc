@@ -2,7 +2,14 @@
   "name": "@convergence/todo-mvc-demo",
   "version": "0.1.0",
   "description": "The famous TodoMVC app written using React, MobX, and Convergence",
-  "keywords": ["realtime", "collaboration", "todomvc", "convergence", "react", "mobx"],
+  "keywords": [
+    "realtime",
+    "collaboration",
+    "todomvc",
+    "convergence",
+    "react",
+    "mobx"
+  ],
   "author": {
     "name": "Convergence Labs, Inc",
     "email": "info@convergencelabs.com",
@@ -20,7 +27,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@convergence/convergence": "1.0.0-beta.8",
+    "@convergence/convergence": "1.0.0-rc.3",
     "@types/classnames": "^2.2.7",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.3",
