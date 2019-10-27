@@ -15,3 +15,16 @@
   font-size: 1rem;
   margin-right: 5px;
 }
+
+.loading {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.loading .banner{
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  color: #1f1d1d;
+  font-weight: 400;
+}

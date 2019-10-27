@@ -29,12 +29,11 @@ export class RootContainer extends Component<{}, IRootContainerState> {
   };
 
   public componentDidMount(): void {
-    console.log("root loading");
     const router = new director.Router({
       "/": () => {
         const id = RootContainer._createUUID();
         const url = new URL(window.location.href);
-        window.history.pushState({}, "", url.href  + id);
+        window.history.pushState({}, "", url.href + id);
         this._init(id);
       },
       '/:id': (id: string) => {
@@ -69,7 +68,12 @@ export class RootContainer extends Component<{}, IRootContainerState> {
     if (todoStore !== null && id !== null) {
       return (<TodoApp id={id} todoStore={todoStore}/>);
     } else {
-      return <div></div>;
+      return (
+        <div className="loading">
+          <div className="banner">Getting Ready</div>
+          <i className="fas fa-spinner fa-3x fa-pulse"/>
+        </div>
+      );
     }
   }
 }
