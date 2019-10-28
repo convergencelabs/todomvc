@@ -67,14 +67,14 @@ class TodoAppComponent extends Component<ITodoAppProps, ITodoAppState> {
       <div>
         <div>
           <div className="share">
-            <a href="#" onClick={this._copyUrlToClipboard}>
+            <span onClick={this._copyUrlToClipboard}>
               <span>Share</span>
               <i className="far fa-share-square"/>
-            </a>
-            <a href="#" onClick={this._newWindowWithTodo}>
+            </span>
+            <span onClick={this._newWindowWithTodo}>
               <span>New Window</span>
               <i className="fas fa-external-link-alt"/>
-            </a>
+            </span>
           </div>
         </div>
         <section className="todoapp">
