@@ -1,19 +1,17 @@
 #todoapp .share {
   text-align: right;
+  color: #bfbfbf;
 }
 
-#todoapp .share a, #todoapp .share span  {
-  color: #039be5;
-}
-
-#todoapp .share a {
+#todoapp .share .anchor {
   margin-left: 10px;
   text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-#todoapp .share span {
-  font-size: 1rem;
-  margin-right: 5px;
+#todoapp .share .anchor svg {
+  padding-left: 5px;
 }
 
 .loading {
@@ -27,4 +25,7 @@
   font-size: 24px;
   color: #1f1d1d;
   font-weight: 400;
+}
+
+.todoapp {
 }

@@ -10,15 +10,17 @@ export class TodoHeader extends Component<ITodoAppProps, {}> {
 
   public render(): ReactNode {
     return (
-      <header className="header">
-        <h1>todos</h1>
-        <input
-          className="new-todo"
-          placeholder="What needs to be done?"
-          onKeyDown={this._handleKeyDown}
-          autoFocus={true}
-        />
-      </header>
+      <div>
+        <header className="header">
+          <h1>todos</h1>
+          <input
+            className="new-todo"
+            placeholder="What needs to be done?"
+            onKeyDown={this._handleKeyDown}
+            autoFocus={true}
+          />
+        </header>
+      </div>
     );
   }
 
