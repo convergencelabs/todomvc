@@ -24,7 +24,7 @@ export class RootContainer extends Component<{}, IRootContainerState> {
 
   private readonly _convergenceDomainStore = new ConvergenceDomainStore();
 
-  state = {
+  state: IRootContainerState = {
     todoStore: null,
     id: null
   };
