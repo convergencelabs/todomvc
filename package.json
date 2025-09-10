@@ -38,7 +38,7 @@
     "react-beautiful-dnd": "10.1.0",
     "react-copy-to-clipboard": "5.0.1",
     "react-dom": "16.8.4",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-toasts": "3.0.6",
     "todomvc-app-css": "2.2.0",
     "todomvc-common": "1.0.5"
